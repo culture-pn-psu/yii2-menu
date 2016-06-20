@@ -1,12 +1,80 @@
-<div class="menu-default-index">
-    <h1><?= $this->context->action->uniqueId ?></h1>
-    <p>
-        This is the view content for action "<?= $this->context->action->id ?>".
-        The action belongs to the controller "<?= get_class($this->context) ?>"
-        in the "<?= $this->context->module->id ?>" module.
-    </p>
-    <p>
-        You may customize this page by editing the following file:<br>
-        <code><?= __FILE__ ?></code>
-    </p>
-</div>
+<?php
+
+use yii\helpers\Html;
+use yii\grid\GridView;
+use firdows\menu\models\Menu;
+use firdows\menu\models\MenuCategory;
+//use kartik\widgets\Select2;
+
+/* @var $this yii\web\View */
+/* @var $searchModel firdows\menu\models\MenuSearch */
+/* @var $dataProvider yii\data\ActiveDataProvider */
+
+$this->title = Yii::t('system', 'ระบบจัดการเมนู');
+$this->params['breadcrumbs'][] = $this->title;
+?>
+<div class='box box-info'>
+    <div class='box-header'>
+     <h3 class='box-title'><?= Html::encode($this->title) ?></h3>
+    </div><!--box-header -->
+
+    <div class='box-body pad'>
+
+        <?=
+        GridView::widget([
+            'dataProvider' => $dataProvider,
+            'filterModel' => $searchModel,
+            'columns' => [
+                ['class' => 'yii\grid\SerialColumn'],
+                [
+                    'attribute' => 'title',
+                    'value' => function($model) {
+                        return $model->title;
+                    }
+                ],
+                [
+                    'attribute' => 'menu_category_id',
+                    'filter' => MenuCategory::getList(),
+                    'value' => function($model) {
+                        return $model->menuCategory->title;
+                    }
+                ],
+                [
+                    'attribute' => 'router',
+                    'filter' => Menu::getRouterDistinct(),                 
+                ],
+                [
+                    'attribute' => 'parent_id',
+                    'filter' => Menu::getParentDistinct(),
+                    'value' => function($model) {
+                        return $model->parentTitle;
+                    }
+                ],
+                // 'parameter',
+                // 'icon',
+                
+                [
+                    'attribute' => 'status',
+                    'filter' => Menu::getItemStatus(),
+                    'value' => 'statusLabel',
+                ],
+                //'item_name',                      
+                [
+                    'attribute' => 'items',
+                    'filter' => Menu::getItemsListDistinct(),
+                    'value' => 'itemsList',
+                    'headerOptions' => ['width' => '200']
+                ],
+                'sort',
+                // 'language',
+                // 'assoc',
+                // 'created_at',
+                // 'created_by',
+                ['class' => 'yii\grid\ActionColumn'],
+            ],
+        ]);
+        ?>
+
+
+    </div><!--box-body pad-->
+</div><!--box box-info-->
