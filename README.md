@@ -1,5 +1,5 @@
-# Menu Manager for Yii 2
-------------------------
+Menu Manager for Yii 2
+======================
 ระบบจัดการเมนู
 
 
@@ -21,7 +21,7 @@ Or, you may add
 "firdows/yii2-menu" : "@dev"
 ```
 
-### ตั้งค่าใน components
+### ตั้งค่าใน main.php
 
 
 ```php
