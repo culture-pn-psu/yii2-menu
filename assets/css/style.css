@@ -1,0 +1,137 @@
+.wizard {
+    *zoom:1;position: relative;
+    overflow: hidden;
+    margin-bottom: 20px
+}
+
+.wizard:before,.wizard:after {
+    display: table;
+    content: "";
+    line-height: 0
+}
+
+.wizard:after {
+    clear: both
+}
+
+.wizard ul {
+    list-style: none outside none;
+    padding: 0;
+    margin: 0;
+    width: 4000px
+}
+
+.wizard ul li{
+    float: left;
+    margin: 0;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    background: #f7f7f8;
+    color: #b2b8bd;
+    font-size: 16px;
+    cursor: default;
+    padding: 0 20px 0 30px;
+}
+.wizard ul li a{
+    
+}
+
+.wizard ul li:first-child {
+    -webkit-border-radius: 2px 0 0 2px;
+    -moz-border-radius: 2px 0 0 2px;
+    border-radius: 2px 0 0 2px
+}
+
+.wizard ul li:last-child {
+    -webkit-border-radius: 0 2px 2px 0;
+    -moz-border-radius: 0 2px 2px 0;
+    border-radius: 0 2px 2px 0
+}
+
+.wizard ul li .chevron {
+    border: 48px solid transparent;
+    border-left: 28px solid white;
+    border-right: 0;
+    display: block;
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    z-index: 1
+}
+
+.wizard ul li .chevron:before {
+    border: 48px solid transparent;
+    border-left: 28px solid #f7f7f8;
+    border-right: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: -48px
+}
+
+.wizard ul li:last-child .chevron {
+    display: none;
+}
+
+.wizard ul li.complete {
+    background: #bdea74;
+    color: white
+}
+
+.wizard ul li.complete:hover {
+    background: #e7eff8;
+    cursor: pointer
+}
+
+.wizard ul li.complete:hover .chevron:before {
+    border-left: 28px solid #e7eff8
+}
+
+.wizard ul li.complete .chevron:before {
+    border-left: 28px solid #bdea74
+}
+
+.wizard ul li.active,.wizard ul li.active a {
+    background: #b2b8bd;
+    color: white
+}
+
+.wizard ul li.active .chevron:before {
+    border-left: 28px solid #b2b8bd
+}
+
+.wizard ul li .badge {
+    margin-right: 8px
+}
+
+.wizard ul li:first-child {
+    border-radius: 4px 0 0 4px;
+    padding-left: 20px
+}
+
+.wizard .actions {
+    z-index: 1000;
+    position: absolute;
+    right: 0;
+    line-height: 46px;
+    float: right;
+    padding-left: 15px;
+    padding-right: 15px;
+    vertical-align: middle
+}
+
+.wizard .actions a {
+    line-height: 45px;
+    font-size: 12px;
+    margin-right: 8px
+}
+
+.wizard .actions .btn-prev i {
+    margin-right: 5px
+}
+
+.wizard .actions .btn-next i {
+    margin-left: 5px
+}
