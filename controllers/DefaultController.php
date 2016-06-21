@@ -121,7 +121,7 @@ class DefaultController extends Controller {
 
             $model->created_at = time();
             $model->created_by = Yii::$app->user->id;
-            $model->params = $post['params'] ? Json::decode($post['params']) : null;
+            $model->params = $post['Menu']['params'] ? Json::decode($post['Menu']['params']) : null;
             $transaction = \Yii::$app->db->beginTransaction();
             try {
 
