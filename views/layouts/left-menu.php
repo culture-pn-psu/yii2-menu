@@ -32,11 +32,59 @@ $controller = $this->context;
             <div class="box-body no-padding">
 
                 <?php
+                $menu = [];
+                $menu[] = [
+                    'label' => 'เมนูทั้งหมด',
+                    'encode' => false,
+                    'url' => ['default/index'],
+                    //$visible,
+                ];
+
+
                 $nav = new common\models\Navigate();
                 echo dmstr\widgets\Menu::widget([
                     'options' => ['class' => 'nav nav-pills nav-stacked'],
                     //'linkTemplate' =>'<a href="{url}">{icon} {label} {badge}</a>',
-                    'items' => $nav->menu(12),
+                    'items' => $menu,
+                ])
+                ?>                 
+
+            </div>
+            <!-- /.box-body -->
+        </div>
+        
+        
+        <?= Html::a('<i class="fa fa-plus-circle"></i> ' . Yii::t('system', 'สร้างประเภทเมนู'), ['/menu/category/create'], ['class' => 'btn btn-success btn-block margin-bottom']) ?>
+
+
+        <div class="box box-solid">
+            <div class="box-header with-border">
+                <h3 class="box-title">
+                    จัดการประเภทเมนู
+                </h3>
+
+                <div class="box-tools">
+                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="box-body no-padding">
+
+                <?php
+                $menu = [];
+                $menu[] = [
+                    'label' => 'ประเภททั้งหมด',
+                    'encode' => false,
+                    'url' => ['category/index'],
+                    //$visible,
+                ];
+
+
+                $nav = new common\models\Navigate();
+                echo dmstr\widgets\Menu::widget([
+                    'options' => ['class' => 'nav nav-pills nav-stacked'],
+                    //'linkTemplate' =>'<a href="{url}">{icon} {label} {badge}</a>',
+                    'items' => $menu,
                 ])
                 ?>                 
 
@@ -44,7 +92,7 @@ $controller = $this->context;
             <!-- /.box-body -->
         </div>
 
-        
+
     </div>
     <!-- /.col -->
 

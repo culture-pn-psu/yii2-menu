@@ -215,4 +215,8 @@ class Menu extends \yii\db\ActiveRecord {
         return ArrayHelper::map(AuthItem::getAll(), 'name', 'name');
     }
 
+    public function getIconShow() {
+        return '<i class="' . $this->icon . '" ></i>';
+    }
+    
 }

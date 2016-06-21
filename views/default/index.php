@@ -28,8 +28,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 ['class' => 'yii\grid\SerialColumn'],
                 [
                     'attribute' => 'title',
+                    'format'=>'html',
                     'value' => function($model) {
-                        return $model->title;
+                        return Html::a($model->iconShow.' '.$model->title,['/menu/default/view','id'=>$model->id]);
                     }
                 ],
                 [
