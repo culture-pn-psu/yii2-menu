@@ -36,3 +36,8 @@ return [
     ...
 ];
 ```
+
+
+Example
+-------
+<img src="http://ikhlasservice.com/uploads/menu.png" width="400"/>
