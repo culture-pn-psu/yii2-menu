@@ -48,6 +48,23 @@ yii migrate --migrationPath=@firdows/menu/migrations
 yii migrate --migrationPath=@mdm/admin/migrations
 ```
 
+### Use การเรียกใช้
+การป้อนรหัสหมวดหมู่เมนูเข้าไปในฟังค์ชั่นจะได้ข้อมูล Array อ่าน
+```php
+$nav = new firdows\menu\models\Navigate();
+$menu = $nav->menu(menu_cate_id);
+```
+
+#### การนำไปใช้กับ Widget
+Ex.
+```php
+dmstr\widgets\Menu::widget([
+    'options' => ['class' => 'sidebar-menu'],
+    'items' => $menu,
+]);
+```
+
+
 
 Example
 -------

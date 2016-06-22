@@ -41,8 +41,9 @@ $controller = $this->context;
                 ];
 
 
-                $nav = new common\models\Navigate();
-                echo dmstr\widgets\Menu::widget([
+                //$nav = new firdows\menu\models\Navigate();
+                //$nav->menu(1);
+                echo yii\bootstrap\Nav::widget([
                     'options' => ['class' => 'nav nav-pills nav-stacked'],
                     //'linkTemplate' =>'<a href="{url}">{icon} {label} {badge}</a>',
                     'items' => $menu,
@@ -80,8 +81,8 @@ $controller = $this->context;
                 ];
 
 
-                $nav = new common\models\Navigate();
-                echo dmstr\widgets\Menu::widget([
+                //$nav = new common\models\Navigate();
+                echo yii\bootstrap\Nav::widget([
                     'options' => ['class' => 'nav nav-pills nav-stacked'],
                     //'linkTemplate' =>'<a href="{url}">{icon} {label} {badge}</a>',
                     'items' => $menu,
