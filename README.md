@@ -37,6 +37,11 @@ return [
 ];
 ```
 
+- [Basic Configuration](https://github.com/mdmsoft/yii2-admin/blob/master/docs/guide/configuration.md)
+```
+yii migrate --migrationPath=@mdm/admin/migrations
+```
+
 
 Example
 -------
