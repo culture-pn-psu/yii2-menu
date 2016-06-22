@@ -4,7 +4,7 @@ namespace firdows\menu\models;
 
 use Yii;
 use yii\helpers\ArrayHelper;
-use common\rbac\models\AuthItem;
+use firdows\menu\models\AuthItem;
 
 /**
  * This is the model class for table "menu".
