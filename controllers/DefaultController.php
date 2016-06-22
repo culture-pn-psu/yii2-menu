@@ -61,6 +61,7 @@ class DefaultController extends Controller {
         $model = new Menu();
 
         if ($model->load(Yii::$app->request->post())) {
+            $post = Yii::$app->request->post();
             $model->created_at = time();
             $model->created_by = Yii::$app->user->id;
 
