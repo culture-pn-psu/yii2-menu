@@ -5,12 +5,12 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model firdows\menu\models\MenuCategory */
 
-$this->title = Yii::t('system', 'Update {modelClass}: ', [
+$this->title = Yii::t('menu', 'Update {modelClass}: ', [
     'modelClass' => 'Menu Category',
 ]) . ' ' . $model->title;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('system', 'Menu Categories'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('menu', 'Menu Categories'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = Yii::t('system', 'Update');
+$this->params['breadcrumbs'][] = Yii::t('menu', 'Update');
 ?>
 <div class='box box-info'>
     <div class='box-header'>

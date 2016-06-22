@@ -15,7 +15,7 @@ $controller = $this->context;
 <div class="row">
     <div class="col-md-3">
 
-        <?= Html::a('<i class="fa fa-plus-circle"></i> ' . Yii::t('system', 'สร้างเมนู'), ['/menu/default/create'], ['class' => 'btn btn-success btn-block margin-bottom']) ?>
+        <?= Html::a('<i class="fa fa-plus-circle"></i> ' . Yii::t('menu', 'สร้างเมนู'), ['/menu/default/create'], ['class' => 'btn btn-success btn-block margin-bottom']) ?>
 
 
         <div class="box box-solid">
@@ -54,7 +54,7 @@ $controller = $this->context;
         </div>
         
         
-        <?= Html::a('<i class="fa fa-plus-circle"></i> ' . Yii::t('system', 'สร้างประเภทเมนู'), ['/menu/category/create'], ['class' => 'btn btn-success btn-block margin-bottom']) ?>
+        <?= Html::a('<i class="fa fa-plus-circle"></i> ' . Yii::t('menu', 'สร้างประเภทเมนู'), ['/menu/category/create'], ['class' => 'btn btn-success btn-block margin-bottom']) ?>
 
 
         <div class="box box-solid">

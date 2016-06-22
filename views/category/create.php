@@ -6,8 +6,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model firdows\menu\models\MenuCategory */
 
-$this->title = Yii::t('system', 'Create Menu Category');
-$this->params['breadcrumbs'][] = ['label' => Yii::t('system', 'Menu Categories'), 'url' => ['index']];
+$this->title = Yii::t('menu', 'Create Menu Category');
+$this->params['breadcrumbs'][] = ['label' => Yii::t('menu', 'Menu Categories'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class='box box-info'>

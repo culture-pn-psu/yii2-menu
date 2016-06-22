@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model firdows\menu\models\MenuCategory */
 
 $this->title = $model->title;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('system', 'Menu Categories'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('menu', 'Menu Categories'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class='box box-info'>
@@ -18,11 +18,11 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class='box-body pad'>
 
     <p>
-        <?= Html::a(Yii::t('system', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a(Yii::t('system', 'Delete'), ['delete', 'id' => $model->id], [
+        <?= Html::a(Yii::t('menu', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
+        <?= Html::a(Yii::t('menu', 'Delete'), ['delete', 'id' => $model->id], [
             'class' => 'btn btn-danger',
             'data' => [
-                'confirm' => Yii::t('system', 'Are you sure you want to delete this item?'),
+                'confirm' => Yii::t('menu', 'Are you sure you want to delete this item?'),
                 'method' => 'post',
             ],
         ]) ?>

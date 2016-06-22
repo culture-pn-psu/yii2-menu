@@ -41,8 +41,8 @@ class MenuAuth extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'menu_id' => Yii::t('system', 'Menu ID'),
-            'item_name' => Yii::t('system', 'Item Name'),
+            'menu_id' => Yii::t('menu', 'Menu ID'),
+            'item_name' => Yii::t('menu', 'Item Name'),
         ];
     }
 

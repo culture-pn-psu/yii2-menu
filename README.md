@@ -36,8 +36,14 @@ return [
     ...
 ];
 ```
+### Migrations
+```
+yii migrate --migrationPath=@firdows/menu/migrations
+```
 
-- [Basic Configuration](https://github.com/mdmsoft/yii2-admin/blob/master/docs/guide/configuration.md)
+
+### ตั้งค่า RBAC
+[Basic Configuration](https://github.com/mdmsoft/yii2-admin/blob/master/docs/guide/configuration.md)
 ```
 yii migrate --migrationPath=@mdm/admin/migrations
 ```

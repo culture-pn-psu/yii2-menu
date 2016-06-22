@@ -10,7 +10,7 @@ use firdows\menu\models\MenuCategory;
 /* @var $searchModel firdows\menu\models\MenuSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('system', 'ระบบจัดการเมนู');
+$this->title = Yii::t('menu', 'ระบบจัดการเมนู');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class='box box-info'>

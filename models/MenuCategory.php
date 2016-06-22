@@ -40,10 +40,10 @@ class MenuCategory extends \yii\db\ActiveRecord {
      */
     public function attributeLabels() {
         return [
-            'id' => Yii::t('system', 'รหัสหมวดเมนู'),
-            'title' => Yii::t('system', 'ชื่อหมวดเมนู'),
-            'status' => Yii::t('system', 'สถานะ'),
-            'discription' => Yii::t('system', 'คำอธิบาย'), 
+            'id' => Yii::t('menu', 'รหัสหมวดเมนู'),
+            'title' => Yii::t('menu', 'ชื่อหมวดเมนู'),
+            'status' => Yii::t('menu', 'สถานะ'),
+            'discription' => Yii::t('menu', 'คำอธิบาย'), 
         ];
     }
 

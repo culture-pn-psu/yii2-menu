@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel firdows\menu\models\MenuCategorySearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('system', 'Menu Categories');
+$this->title = Yii::t('menu', 'Menu Categories');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class='box box-info'>
@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class='box-body pad'>
         
     <p>
-        <?= Html::a(Yii::t('system', 'Create Menu Category'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('menu', 'Create Menu Category'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
