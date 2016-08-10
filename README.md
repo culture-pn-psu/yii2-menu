@@ -76,4 +76,4 @@ Example
 
 Develop By
 ----------
-(Ahmad)[https://www.google.co.th/search?q=madone&source=lnms&tbm=isch&sa=X]
+Ahmad
