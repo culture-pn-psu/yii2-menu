@@ -130,8 +130,9 @@ class DefaultController extends Controller {
                 if ($flag = $model->save(false)) {
 
                     $title = $post['Menu']['items'];
+                    MenuAuth::deleteAll(['menu_id' => $model->id]);
                     if ($title) {
-                        MenuAuth::deleteAll(['menu_id' => $model->id]);
+                        
                         foreach ($title as $key => $val) {
                             $menuAuth = new MenuAuth();
                             $menuAuth->menu_id = $model->id;
