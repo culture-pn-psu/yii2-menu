@@ -39,7 +39,7 @@ class Navigate extends \yii\base\Model {
         return $model ? $this->genArray($model) : null;
     }
 
-    private function genArray($model) {
+    protected function genArray($model) {
         //$ob='backend\modules\seller\models\RegisterSeller::getCoutRegis();';
         //$run ='getCoutRegis()';
         $menu = [];
@@ -49,6 +49,7 @@ class Navigate extends \yii\base\Model {
             //print_r($params);
             //$labelParam = $params?(eval('return '.$params['label'])):null;
             
+            //v2.0 ปิดการเช็ค item_name
             $visible = false;
             $menuAuths = $val->menuAuths; 
             foreach($menuAuths as $item){
@@ -59,11 +60,11 @@ class Navigate extends \yii\base\Model {
             
             $this->getCount($val->router);
             $menu[] = [
-                'label' => $val->title . $this->count,
+                'label' => $val->title . $this->count,//v2.0 ใช้ $val->name
                 'encode' => false,
                 'icon' => $val->icon,
-                'url' => [$val->router],
-                'visible' => $visible,
+                'url' => [$val->router],//v2.0 ใช้ $val->route
+                'visible' => $visible,//v2.0 ปิด
                 //$visible,
                 'items' => $items
             ];
@@ -76,5 +77,32 @@ class Navigate extends \yii\base\Model {
         //return $count;
     }
     
+    
+    public static function genMenu($menu){
+        
+        foreach ($menu as $val) {
+           // $items = ($val->id) ? $this->parentMenu($val->id) : null;
+            //$params = $val['params']?Json::encode($val['params']):null;
+            //print_r($params);
+            //$labelParam = $params?(eval('return '.$params['label'])):null;
+                       
+            
+            $self= new self();
+            $count = $self->getCount($val['route']);
+            $menu[] = [
+                'label' => $val->title . $count,
+                'encode' => false,
+                'icon' => $val->icon,
+                'url' => [$val->router],//v2.0 ใช้ $val->route
+                'visible' => $visible,//v2.0 ปิด
+                //$visible,
+                'items' => $items
+            ];
+        }
+        //print_r($menu);
+        return $menu;
+        
+        
+    }
 
 }

@@ -38,7 +38,11 @@ $asset = AppAsset::register($this);
         <?= $form->field($model, 'parameter')->textInput(['maxlength' => true]) ?>
     </div> 
 </div> 
-
+<div class="row"> 
+<div class="col-sm-6">  
+        <?= $form->field($model, 'route')->textInput(['maxlength' => true]) ?>
+    </div>   
+    </div>   
 
 <div class="row">   
     <div class="col-sm-6">

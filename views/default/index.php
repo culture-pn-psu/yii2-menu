@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'columns' => [
                 ['class' => 'yii\grid\SerialColumn'],
                 [
-                    'attribute' => 'title',
+                    'attribute' => 'name',
                     'format'=>'html',
                     'value' => function($model) {
                         return Html::a($model->iconShow.' '.$model->title,['/menu/default/view','id'=>$model->id]);
@@ -37,11 +37,11 @@ $this->params['breadcrumbs'][] = $this->title;
                     'attribute' => 'menu_category_id',
                     'filter' => MenuCategory::getList(),
                     'value' => function($model) {
-                        return $model->menuCategory->title;
+                        return $model->menu_category_id?$model->menuCategory->title:null;
                     }
                 ],
                 [
-                    'attribute' => 'router',
+                    'attribute' => 'route',
                     'filter' => Menu::getRouterDistinct(),                 
                 ],
                 [
