@@ -17,7 +17,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require firdows/yii2-menu "@dev"
+composer require culture-pn-psu/yii2-menu
 ```
 Or, you may add
 ```
