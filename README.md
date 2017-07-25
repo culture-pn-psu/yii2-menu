@@ -17,7 +17,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require culture-pn-psu/yii2-menu
+composer require firdows/yii2-menu "@dev"
 ```
 Or, you may add
 ```
@@ -32,7 +32,7 @@ return [
     ...
     'modules' => [
         'menu' => [
-            'class' => 'firdows\menu\Module',
+            'class' => 'culturePnPsu\menu\Module',
         ],
     ],
     'components'=>[...]
@@ -56,7 +56,7 @@ Usage การเรียกใช้
 --------------
 การป้อนรหัสหมวดหมู่เมนูเข้าไปในฟังค์ชั่นจะได้ข้อมูล Array อ่าน
 ```php
-$nav = new firdows\menu\models\Navigate();
+$nav = new culturePnPsu\menu\models\Navigate();
 $menu = $nav->menu(menu_cate_id);
 ```
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace firdows\menu;
+namespace culturePnPsu\menu;
 use Yii;
 /**
  * menu module definition class
@@ -10,7 +10,7 @@ class Module extends \yii\base\Module {
     /**
      * @inheritdoc
      */
-    public $controllerNamespace = 'firdows\menu\controllers';
+    public $controllerNamespace = 'culturePnPsu\menu\controllers';
 
     /**
      * @inheritdoc
