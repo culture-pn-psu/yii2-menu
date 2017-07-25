@@ -1,5 +1,5 @@
 {
-    "name": "firdows/yii2-menu",
+    "name": "culture-pn-psu/yii2-menu",
     "description": "menu system",
     "type": "yii2-extension",
     "keywords": ["yii2","extension","menu","system"],
@@ -19,13 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "firdows\\menu\\": ""
-        }
-    },
-    "extra": {
-        "asset-installer-paths": {
-            "npm-asset-library": "vendor/npm",
-            "bower-asset-library": "vendor/bower"
+            "culture-pn-psu\\menu\\": ""
         }
     }
 }
