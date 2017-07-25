@@ -2,13 +2,13 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use firdows\menu\models\Menu;
-use firdows\menu\models\MenuCategory;
+use culturePnPsu\menu\models\Menu;
+use culturePnPsu\menu\models\MenuCategory;
 use kartik\widgets\Select2;
 /* @var $this yii\web\View */
-/* @var $model firdows\menu\models\Menu */
+/* @var $model culturePnPsu\menu\models\Menu */
 /* @var $form yii\widgets\ActiveForm */
-use firdows\menu\assets\AppAsset;
+use culturePnPsu\menu\assets\AppAsset;
 
 $asset = AppAsset::register($this);
 ?>

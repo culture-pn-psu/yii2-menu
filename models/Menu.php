@@ -1,10 +1,10 @@
 <?php
 
-namespace firdows\menu\models;
+namespace culturePnPsu\menu\models;
 
 use Yii;
 use yii\helpers\ArrayHelper;
-use firdows\menu\models\AuthItem;
+use culturePnPsu\menu\models\AuthItem;
 
 /**
  * This is the model class for table "menu".

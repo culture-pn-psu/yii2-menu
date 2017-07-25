@@ -2,12 +2,12 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use firdows\menu\models\Menu;
-use firdows\menu\models\MenuCategory;
+use culturePnPsu\menu\models\Menu;
+use culturePnPsu\menu\models\MenuCategory;
 //use kartik\widgets\Select2;
 
 /* @var $this yii\web\View */
-/* @var $searchModel firdows\menu\models\MenuSearch */
+/* @var $searchModel culturePnPsu\menu\models\MenuSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('menu', 'ระบบจัดการเมนู');

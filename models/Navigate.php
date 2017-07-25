@@ -1,11 +1,11 @@
 <?php
 
-namespace firdows\menu\models;
+namespace culturePnPsu\menu\models;
 
 //use yii\base\Model;
 use Yii;
 use yii\helpers\Html;
-use firdows\menu\models\Menu;
+use culturePnPsu\menu\models\Menu;
 
 /**
  * Description of navigate

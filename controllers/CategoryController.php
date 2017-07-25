@@ -1,10 +1,10 @@
 <?php
 
-namespace firdows\menu\controllers;
+namespace culturePnPsu\menu\controllers;
 
 use Yii;
-use firdows\menu\models\MenuCategory;
-use firdows\menu\models\MenuCategorySearch;
+use culturePnPsu\menu\models\MenuCategory;
+use culturePnPsu\menu\models\MenuCategorySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

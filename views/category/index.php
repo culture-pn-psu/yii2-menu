@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel firdows\menu\models\MenuCategorySearch */
+/* @var $searchModel culturePnPsu\menu\models\MenuCategorySearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Yii::t('menu', 'Menu Categories');

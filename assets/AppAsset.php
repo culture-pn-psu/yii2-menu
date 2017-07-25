@@ -7,7 +7,7 @@
  * -----------------------------------------------------------------------------
  */
 
-namespace firdows\menu\assets;
+namespace culturePnPsu\menu\assets;
 
 use yii\web\AssetBundle;
 

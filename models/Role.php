@@ -1,5 +1,5 @@
 <?php
-namespace firdows\menu\models;
+namespace culturePnPsu\menu\models;
 
 use common\models\User;
 use yii\db\ActiveRecord;

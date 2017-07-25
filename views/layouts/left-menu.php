@@ -41,7 +41,7 @@ $controller = $this->context;
                 ];
 
 
-                //$nav = new firdows\menu\models\Navigate();
+                //$nav = new culturePnPsu\menu\models\Navigate();
                 //$nav->menu(1);
                 echo yii\bootstrap\Nav::widget([
                     'options' => ['class' => 'nav nav-pills nav-stacked'],

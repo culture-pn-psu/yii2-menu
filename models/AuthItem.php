@@ -1,6 +1,6 @@
 <?php
 
-namespace firdows\menu\models;
+namespace culturePnPsu\menu\models;
 
 use yii\db\ActiveRecord;
 use Yii;

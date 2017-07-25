@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model firdows\menu\models\MenuCategorySearch */
+/* @var $model culturePnPsu\menu\models\MenuCategorySearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 

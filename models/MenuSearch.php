@@ -1,14 +1,14 @@
 <?php
 
-namespace firdows\menu\models;
+namespace culturePnPsu\menu\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use firdows\menu\models\Menu;
+use culturePnPsu\menu\models\Menu;
 
 /**
- * MenuSearch represents the model behind the search form about `firdows\menu\models\Menu`.
+ * MenuSearch represents the model behind the search form about `culturePnPsu\menu\models\Menu`.
  */
 class MenuSearch extends Menu
 {
