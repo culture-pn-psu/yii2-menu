@@ -84,7 +84,7 @@ class DefaultController extends Controller {
                                 $transaction->rollBack();
                                 break;
                             } else {
-                                print_r($articleTag->getErrors());
+                                print_r($menuAuth->getErrors());
                             }
                         }
                     }
