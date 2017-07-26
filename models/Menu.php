@@ -216,7 +216,7 @@ class Menu extends \yii\db\ActiveRecord {
     }
 
     public function getIconShow() {
-        return '<i class="' . $this->icon . '" ></i>';
+        return '<i class="fa fa-' . $this->icon . '" ></i>';
     }
     
 }

@@ -51,7 +51,8 @@ class AuthItem extends ActiveRecord {
     }
 
     public static function getAll() {
-        $searchModel = new AuthItemSearch(['type' => Item::TYPE_PERMISSION]);
+        //$searchModel = new AuthItemSearch(['type' => Item::TYPE_PERMISSION]);
+        $searchModel = new AuthItemSearch(['type' => Item::TYPE_ROLE]);
         $dataProvider = $searchModel->search(Yii::$app->getRequest()->getQueryParams());
         $name = [];
         foreach ($dataProvider->allModels as $key=>$item){
